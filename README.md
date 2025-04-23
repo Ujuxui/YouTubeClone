@@ -41,7 +41,7 @@ YouTube-frontend (client) -
 
 
 ## How to run the application –
-Clone the repository using git clone https://https://github.com/Ujuxui/YouTubeClone.git
+Clone the repository using git clone https://github.com/Ujuxui/YouTubeClone.git
 
 **Frontend** -
 *cd YouTube-frontend*,
