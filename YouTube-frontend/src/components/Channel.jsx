@@ -185,13 +185,7 @@ const Channel = () => {
               />
               
               <div className="border-2 border-dashed border-gray-400 rounded-xl p-8 flex flex-col items-center justify-center cursor-pointer hover:bg-gray-50 transition duration-200">
-        <span className="text-sm text-gray-500">or click to choose a file</span>
-        <input
-          type="file"
-          id="videoInput"
-          accept="video/*"
-          className="hidden"
-        />
+               <p className="text-sm text-gray-500">or click to choose a file</p>
               </div>
               <button
                 className="bg-blue-600 text-white px-4 py-2 mt-2 rounded"
