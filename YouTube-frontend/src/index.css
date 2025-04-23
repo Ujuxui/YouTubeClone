@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+cursor: pointer;
+}
+
+.YT-logo{
+font-stretch: ultra-condensed;
+}

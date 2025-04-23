@@ -1,0 +1,21 @@
+{
+  "name": "mongodb---api",
+  "version": "1.0.0",
+  "description": "Build APIs with Node.js and Express.js for Shoppyglobe E-commerce",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Ujwala",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.2"
+  }
+}
