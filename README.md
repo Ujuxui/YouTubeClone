@@ -30,7 +30,7 @@ An Interactive and Responsive YouTube Clone built using MERN stack, showcasing c
 **YouTubeClone** - 
 YouTube-frontend (client) -
 
-![image](https://github.com/user-attachments/assets/6fe1f14d-0989-423f-ad32-6a6504b02ff8)
+![image](https://github.com/user-attachments/assets/e8071e9a-8a18-46b2-bc7d-de1c21bfb994)
 
 
 & YouTube-backend (server) - MVC Architecture
