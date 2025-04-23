@@ -35,7 +35,8 @@ YouTube-frontend (client) -
 
 & YouTube-backend (server) - MVC Architecture
 
-![image](https://github.com/user-attachments/assets/60aeda0f-67e3-4778-8649-dab482394da8)
+![image](https://github.com/user-attachments/assets/1d562988-d822-4ea6-998e-bc81ea080b02)
+
 
 
 
