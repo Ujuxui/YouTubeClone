@@ -153,6 +153,54 @@ const Channel = () => {
             </button>
           </div>
         </div>
+                  {/* Upload New Video */}
+                  {showUploadForm && (
+            <div className="max-w-xl mx-auto mt-10 bg-gray-100 p-6 rounded shadow">
+              <h3 className="text-xl font-semibold mb-4">Upload New Video</h3>
+              <input
+                type="text"
+                className="w-full mb-2 p-2 border rounded"
+                placeholder="Title"
+                value={videoData.title}
+                onChange={(e) =>
+                  setVideoData({ ...videoData, title: e.target.value })
+                }
+              />
+              <textarea
+                className="w-full mb-2 p-2 border rounded"
+                placeholder="Description"
+                value={videoData.description}
+                onChange={(e) =>
+                  setVideoData({ ...videoData, description: e.target.value })
+                }
+              />
+              <input
+                type="text"
+                className="w-full mb-2 p-2 border rounded"
+                placeholder="Video URL"
+                value={videoData.videoUrl}
+                onChange={(e) =>
+                  setVideoData({ ...videoData, videoUrl: e.target.value })
+                }
+              />
+              
+              <div className="border-2 border-dashed border-gray-400 rounded-xl p-8 flex flex-col items-center justify-center cursor-pointer hover:bg-gray-50 transition duration-200">
+        <span className="text-sm text-gray-500">or click to choose a file</span>
+        <input
+          type="file"
+          id="videoInput"
+          accept="video/*"
+          className="hidden"
+        />
+              </div>
+              <button
+                className="bg-blue-600 text-white px-4 py-2 mt-2 rounded"
+                onClick={handleUpload}
+              >
+                Upload
+              </button>
+            </div>
+          )}
         {/* Video Section */}
         <div className="mt-8 ml-8">
           <h2 className="text-2xl font-semibold mb-4">My Videos</h2>
@@ -226,44 +274,7 @@ const Channel = () => {
               ))}
             </div>
           )}
-          {/* Upload New Video */}
-          {showUploadForm && (
-            <div className="max-w-xl mx-auto mt-10 bg-gray-100 p-6 rounded shadow">
-              <h3 className="text-xl font-semibold mb-4">Upload New Video</h3>
-              <input
-                type="text"
-                className="w-full mb-2 p-2 border rounded"
-                placeholder="Title"
-                value={videoData.title}
-                onChange={(e) =>
-                  setVideoData({ ...videoData, title: e.target.value })
-                }
-              />
-              <textarea
-                className="w-full mb-2 p-2 border rounded"
-                placeholder="Description"
-                value={videoData.description}
-                onChange={(e) =>
-                  setVideoData({ ...videoData, description: e.target.value })
-                }
-              />
-              <input
-                type="text"
-                className="w-full mb-2 p-2 border rounded"
-                placeholder="Video URL"
-                value={videoData.videoUrl}
-                onChange={(e) =>
-                  setVideoData({ ...videoData, videoUrl: e.target.value })
-                }
-              />
-              <button
-                className="bg-blue-600 text-white px-4 py-2 rounded"
-                onClick={handleUpload}
-              >
-                Upload
-              </button>
-            </div>
-          )}
+
         </div>
       </div>
     </div>
